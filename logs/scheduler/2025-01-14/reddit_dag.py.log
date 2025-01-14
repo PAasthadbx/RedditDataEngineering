@@ -1,0 +1,499 @@
+[2025-01-14T15:53:26.416+0000] {processor.py:157} INFO - Started process (PID=37) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:53:26.417+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:53:26.420+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:53:26.420+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:53:26.977+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:53:26.974+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:53:26.977+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:53:27.004+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.591 seconds
+[2025-01-14T15:53:57.161+0000] {processor.py:157} INFO - Started process (PID=51) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:53:57.162+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:53:57.167+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:53:57.167+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:53:57.612+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:53:57.611+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:53:57.613+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:53:57.628+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.470 seconds
+[2025-01-14T15:54:27.694+0000] {processor.py:157} INFO - Started process (PID=53) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:54:27.695+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:54:27.696+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:54:27.696+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:54:28.136+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:54:28.135+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:54:28.136+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:54:28.152+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.461 seconds
+[2025-01-14T15:54:58.280+0000] {processor.py:157} INFO - Started process (PID=55) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:54:58.281+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:54:58.283+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:54:58.283+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:54:58.718+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:54:58.717+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:54:58.718+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:54:58.736+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.458 seconds
+[2025-01-14T15:55:28.877+0000] {processor.py:157} INFO - Started process (PID=57) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:55:28.879+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:55:28.881+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:55:28.880+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:55:29.336+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:55:29.334+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:55:29.336+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:55:29.353+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.479 seconds
+[2025-01-14T15:55:59.489+0000] {processor.py:157} INFO - Started process (PID=59) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:55:59.491+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:55:59.493+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:55:59.493+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:55:59.957+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:55:59.955+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:55:59.957+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:55:59.972+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.486 seconds
+[2025-01-14T15:56:30.110+0000] {processor.py:157} INFO - Started process (PID=61) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:56:30.111+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:56:30.112+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:56:30.112+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:56:30.553+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:56:30.551+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:56:30.553+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:56:30.567+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.459 seconds
+[2025-01-14T15:57:00.705+0000] {processor.py:157} INFO - Started process (PID=63) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:57:00.707+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:57:00.823+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:57:00.823+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:57:01.108+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:57:01.107+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:57:01.109+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:57:01.123+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.421 seconds
+[2025-01-14T15:57:31.254+0000] {processor.py:157} INFO - Started process (PID=65) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:57:31.255+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:57:31.256+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:57:31.256+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:57:31.591+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:57:31.589+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 781, in get
+    d = self._unify_values(section, vars)
+  File "/usr/local/lib/python3.9/configparser.py", line 1152, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'aws'
+[2025-01-14T15:57:31.592+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:57:31.609+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.359 seconds
+[2025-01-14T15:58:01.736+0000] {processor.py:157} INFO - Started process (PID=67) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:01.738+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:58:01.740+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:58:01.740+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:02.053+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:58:02.051+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/configparser.py", line 789, in get
+    value = d[option]
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 941, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 933, in __missing__
+    raise KeyError(key)
+KeyError: 'aws_access_key_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 792, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'aws_access_key_id' in section: 'aws'
+[2025-01-14T15:58:02.053+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:02.070+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.337 seconds
+[2025-01-14T15:58:32.200+0000] {processor.py:157} INFO - Started process (PID=69) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:32.200+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:58:32.202+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:58:32.202+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:32.527+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:58:32.524+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/configparser.py", line 789, in get
+    value = d[option]
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 941, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 933, in __missing__
+    raise KeyError(key)
+KeyError: 'aws_access_key_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 792, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'aws_access_key_id' in section: 'aws'
+[2025-01-14T15:58:32.527+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:32.545+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.348 seconds
+[2025-01-14T15:58:38.232+0000] {processor.py:157} INFO - Started process (PID=71) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:38.233+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:58:38.234+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:58:38.234+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:38.570+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:58:38.568+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/configparser.py", line 789, in get
+    value = d[option]
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 941, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 933, in __missing__
+    raise KeyError(key)
+KeyError: 'aws_access_key_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 792, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'aws_access_key_id' in section: 'aws'
+[2025-01-14T15:58:38.571+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:58:38.588+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.358 seconds
+[2025-01-14T15:59:08.718+0000] {processor.py:157} INFO - Started process (PID=73) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:59:08.719+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:59:08.721+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:59:08.721+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:59:09.040+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:59:09.038+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/configparser.py", line 789, in get
+    value = d[option]
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 941, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 933, in __missing__
+    raise KeyError(key)
+KeyError: 'aws_access_key_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 792, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'aws_access_key_id' in section: 'aws'
+[2025-01-14T15:59:09.040+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:59:09.057+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.342 seconds
+[2025-01-14T15:59:39.176+0000] {processor.py:157} INFO - Started process (PID=75) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:59:39.176+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T15:59:39.179+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:59:39.178+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:59:39.503+0000] {logging_mixin.py:151} INFO - [2025-01-14T15:59:39.501+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/configparser.py", line 789, in get
+    value = d[option]
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 941, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 933, in __missing__
+    raise KeyError(key)
+KeyError: 'aws_access_key_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 792, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'aws_access_key_id' in section: 'aws'
+[2025-01-14T15:59:39.504+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T15:59:39.523+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.350 seconds
+[2025-01-14T16:00:09.640+0000] {processor.py:157} INFO - Started process (PID=77) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:00:09.641+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:00:09.643+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:00:09.643+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:00:09.938+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:00:09.936+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/configparser.py", line 789, in get
+    value = d[option]
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 941, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/usr/local/lib/python3.9/collections/__init__.py", line 933, in __missing__
+    raise KeyError(key)
+KeyError: 'aws_access_key_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+  File "/opt/airflow/etls/reddit_etl.py", line 8, in <module>
+    from utils.constants import POST_FIELDS
+  File "/opt/airflow/utils/constants.py", line 17, in <module>
+    AWS_ACCESS_KEY_ID = parser.get('aws', 'aws_access_key_id')
+  File "/usr/local/lib/python3.9/configparser.py", line 792, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'aws_access_key_id' in section: 'aws'
+[2025-01-14T16:00:09.939+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:00:09.959+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.322 seconds
+[2025-01-14T16:00:40.082+0000] {processor.py:157} INFO - Started process (PID=79) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:00:40.083+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:00:40.085+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:00:40.084+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:00:40.408+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:00:40.406+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+ImportError: cannot import name 'transform_data' from 'etls.reddit_etl' (/opt/airflow/etls/reddit_etl.py)
+[2025-01-14T16:00:40.408+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:00:40.427+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.347 seconds
+[2025-01-14T16:01:10.547+0000] {processor.py:157} INFO - Started process (PID=81) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:01:10.548+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:01:10.549+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:10.549+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:01:10.841+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:10.840+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/reddit_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_dag.py", line 11, in <module>
+    from pipelines.reddit_pipeline import reddit_pipeline
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 3, in <module>
+    from etls.reddit_etl import connect_reddit, extract_posts, transform_data, load_data_to_csv
+ImportError: cannot import name 'transform_data' from 'etls.reddit_etl' (/opt/airflow/etls/reddit_etl.py)
+[2025-01-14T16:01:10.842+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:01:10.859+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.315 seconds
+[2025-01-14T16:01:40.985+0000] {processor.py:157} INFO - Started process (PID=83) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:01:40.986+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:01:40.987+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:40.987+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:01:41.294+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_reddit_pipeline']) retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:01:41.478+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:41.478+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-01-14T16:01:41.488+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:41.488+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-01-14T16:01:41.494+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:41.494+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-01-14T16:01:41.495+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:41.495+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-01-14T16:01:41.507+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:41.506+0000] {dag.py:2963} INFO - Creating ORM DAG for etl_reddit_pipeline
+[2025-01-14T16:01:41.516+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:01:41.516+0000] {dag.py:3722} INFO - Setting next_dagrun for etl_reddit_pipeline to 2025-01-13T00:00:00+00:00, run_after=2025-01-14T00:00:00+00:00
+[2025-01-14T16:01:41.534+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.552 seconds
+[2025-01-14T16:02:11.669+0000] {processor.py:157} INFO - Started process (PID=85) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:02:11.671+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:02:11.673+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:02:11.672+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:02:11.984+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_reddit_pipeline']) retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:02:12.008+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:02:12.008+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-01-14T16:02:12.029+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:02:12.029+0000] {dag.py:3722} INFO - Setting next_dagrun for etl_reddit_pipeline to 2025-01-13T00:00:00+00:00, run_after=2025-01-14T00:00:00+00:00
+[2025-01-14T16:02:12.045+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.378 seconds
+[2025-01-14T16:02:42.175+0000] {processor.py:157} INFO - Started process (PID=87) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:02:42.175+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:02:42.177+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:02:42.177+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:02:42.497+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_reddit_pipeline']) retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:02:42.533+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:02:42.531+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-01-14T16:02:42.557+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:02:42.557+0000] {dag.py:3722} INFO - Setting next_dagrun for etl_reddit_pipeline to 2025-01-13T00:00:00+00:00, run_after=2025-01-14T00:00:00+00:00
+[2025-01-14T16:02:42.573+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.401 seconds
+[2025-01-14T16:03:12.701+0000] {processor.py:157} INFO - Started process (PID=89) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:03:12.702+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:03:12.704+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:03:12.704+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:03:13.000+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_reddit_pipeline']) retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:03:13.024+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:03:13.024+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-01-14T16:03:13.047+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:03:13.047+0000] {dag.py:3722} INFO - Setting next_dagrun for etl_reddit_pipeline to 2025-01-13T00:00:00+00:00, run_after=2025-01-14T00:00:00+00:00
+[2025-01-14T16:03:13.064+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.365 seconds
+[2025-01-14T16:03:43.201+0000] {processor.py:157} INFO - Started process (PID=91) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:03:43.202+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:03:43.203+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:03:43.203+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:03:43.512+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_reddit_pipeline']) retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:03:43.533+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:03:43.532+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-01-14T16:03:43.552+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:03:43.552+0000] {dag.py:3722} INFO - Setting next_dagrun for etl_reddit_pipeline to 2025-01-13T00:00:00+00:00, run_after=2025-01-14T00:00:00+00:00
+[2025-01-14T16:03:43.568+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.370 seconds
+[2025-01-14T16:04:13.703+0000] {processor.py:157} INFO - Started process (PID=93) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:04:13.704+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:04:13.709+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:04:13.709+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:04:14.240+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_reddit_pipeline']) retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:04:14.272+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:04:14.271+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-01-14T16:04:14.300+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:04:14.300+0000] {dag.py:3722} INFO - Setting next_dagrun for etl_reddit_pipeline to 2025-01-13T00:00:00+00:00, run_after=2025-01-14T00:00:00+00:00
+[2025-01-14T16:04:14.322+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.627 seconds
+[2025-01-14T16:04:44.467+0000] {processor.py:157} INFO - Started process (PID=95) to work on /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:04:44.472+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/reddit_dag.py for tasks to queue
+[2025-01-14T16:04:44.476+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:04:44.476+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:04:44.841+0000] {processor.py:839} INFO - DAG(s) dict_keys(['etl_reddit_pipeline']) retrieved from /opt/airflow/dags/reddit_dag.py
+[2025-01-14T16:04:44.868+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:04:44.868+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-01-14T16:04:44.891+0000] {logging_mixin.py:151} INFO - [2025-01-14T16:04:44.891+0000] {dag.py:3722} INFO - Setting next_dagrun for etl_reddit_pipeline to 2025-01-13T00:00:00+00:00, run_after=2025-01-14T00:00:00+00:00
+[2025-01-14T16:04:44.908+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/reddit_dag.py took 0.445 seconds
